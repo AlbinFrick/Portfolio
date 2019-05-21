@@ -4,7 +4,7 @@ export class Image extends Component {
 	render() {
 		return (
 			<div className="image">
-				<p>Bild här! test</p>
+				<p>Bild här!</p>
 			</div>
 		);
 	}
