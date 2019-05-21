@@ -1,0 +1,27 @@
+.about {
+	position: absolute;
+	top: 15vh;
+	right: 5%;
+	width: 45%;
+	height: 60%;
+}
+
+.about > .info {
+	width: 70%;
+	height: 50%;
+	margin: auto;
+}
+
+.about > .info > h1 {
+	text-align: center;
+	margin-bottom: 5vh;
+	font-size: 3em;
+	letter-spacing: 1vh;
+	font-family: 'Montserrat';
+
+	border-bottom: 2px solid rgb(133, 199, 222);
+}
+
+.about > .info > p {
+	font-family: 'Raleway';
+}
