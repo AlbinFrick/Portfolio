@@ -1,0 +1,60 @@
+.home {
+	position: absolute;
+	top: 15vh;
+	right: 5%;
+	width: 45%;
+	height: 60%;
+}
+
+.home > .info {
+	width: 70%;
+	height: 50%;
+	margin-right: 50%;
+}
+
+.home > .info > h1 {
+	text-align: center;
+	margin-bottom: 5vh;
+	font-size: 3em;
+	letter-spacing: 1vh;
+	font-family: 'Montserrat';
+
+	border-bottom: 2px solid rgb(133, 199, 222);
+}
+
+.home > .info > p {
+	font-family: 'Raleway';
+}
+
+.home > nav {
+	width: 70%;
+	margin-right: 50%;
+}
+
+.home > nav > ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.home > nav > ul > a {
+	width: 25%;
+	color: black;
+}
+
+.home > nav > ul > a > li {
+	display: inline-block;
+	width: 100%;
+	height: 2vw;
+	line-height: 2vw;
+	text-align: center;
+	border-bottom: 1px solid black;
+	transition: 300ms ease-in-out;
+}
+
+.home > nav > ul > a > li:hover {
+	background: black;
+	color: white;
+	border-bottom: none;
+	border-radius: 20px;
+}
