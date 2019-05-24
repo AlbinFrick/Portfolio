@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Proffe from '../../Resources/proffe-placeholder.jpg';
+import Proffe from '../../Resources/proffe.jpeg';
 import './Image.css';
 
 export class Image extends Component {
