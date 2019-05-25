@@ -1,0 +1,13 @@
+.home-button {
+	width: 4.5vw;
+	height: 1.75vw;
+	margin-right: 5vw;
+	margin-top: 0.125vw;
+	border-radius: 30px;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	line-height: 1.75vw;
+	float: right;
+	border: 1px solid black;
+}

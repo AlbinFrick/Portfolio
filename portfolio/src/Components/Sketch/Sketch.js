@@ -25,7 +25,7 @@ export default function sketch(p) {
 	p.draw = function() {
 		p.clear();
 		p.noStroke();
-		p.fill(255);
+		p.fill(p.color(238, 249, 255));
 		p.beginShape();
 		for (let i = 0; i < pointSize + 3; i++) {
 			xoff += inc;
