@@ -3,6 +3,7 @@ import P5Wrapper from 'react-p5-wrapper';
 import Sketch from '../Sketch/Sketch';
 import Image from '../Image/Image';
 import Info from '../Info/Info';
+import './Home.css';
 
 function Home() {
 	return (

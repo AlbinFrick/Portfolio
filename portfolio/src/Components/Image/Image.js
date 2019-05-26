@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Proffe from '../../Resources/proffe.jpeg';
 import './Image.css';
+import './Image-min.css';
 
 export class Image extends Component {
 	render() {

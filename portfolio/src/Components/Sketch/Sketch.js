@@ -1,4 +1,5 @@
 import './Sketch.css';
+import './Sketch-min.css';
 
 export default function sketch(p) {
 	let points = [];

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Info.css';
+import './Info-min.css';
 
 export class Info extends Component {
 	render() {
 		return (
-			<div className="home">
+			<div className="info-container">
 				<div className="info">
 					<h1>Albin Frick</h1>
 					<p>
