@@ -4,20 +4,45 @@ import './Info.css';
 import './Info-min.css';
 
 export class Info extends Component {
+	renderIntroText = () => {
+		if (window.innerWidth < 1000) {
+			return (
+				<>
+					<p>
+						I'm born and raised in the city of Lycksele in the north
+						of Sweden. I'm a happy and positive guy who likes
+						adventure, specially if there's some adrenaline is
+						involved.
+					</p>
+					<br />
+					<p>
+						I also have a big interest for computers. For the last
+						three years i've lived in Umeå where i study to for my
+						masters of science in engineering of interaction and
+						design at Umeå Universitet.
+					</p>
+				</>
+			);
+		} else {
+			return (
+				<p>
+					I'm born and raised in the city of Lycksele in the north of
+					Sweden. I'm a happy and positive guy who likes adventure,
+					specially if there's some adrenaline is involved. I also
+					have a big interest for computers. For the last three years
+					i've lived in Umeå where i study to for my masters of
+					science in engineering of interaction and design at Umeå
+					Universitet.
+				</p>
+			);
+		}
+	};
 	render() {
 		return (
 			<div className="info-container">
 				<div className="info">
 					<h1>Albin Frick</h1>
-					<p>
-						I'm born and raised in the city of Lycksele in the north
-						of Sweden. I'm a happy and positive guy who likes
-						adventure, specially if there's some adrenaline is
-						involved. I also have a big interest for computers. For
-						the last three years i've lived in Umeå where i study to
-						for my masters of science in engineering of interaction
-						and design at Umeå Universitet.
-					</p>
+					{this.renderIntroText()}
 					{/* 	<p>
 						Jag heter Albin Frick och jag är född och uppvuxen i
 						Lycksele. Jag är en glad och positiv kille som gillar
@@ -27,7 +52,7 @@ export class Info extends Component {
 						Civilingenjörsprogrammet i interaktion och design vid
 						Umeå Universitet.
 					</p>
- */}{' '}
+ */}
 				</div>
 				<nav>
 					<ul>

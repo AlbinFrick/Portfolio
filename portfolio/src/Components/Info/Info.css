@@ -23,6 +23,8 @@
 }
 .info-container > .info > p {
 	font-family: 'Raleway';
+	font-size: 1.1em;
+	letter-spacing: 1px;
 }
 
 .info-container > nav {
