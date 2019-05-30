@@ -47,7 +47,8 @@ export class Section1 extends Component {
 		return (
 			<div className="projects-first-section">
 				<Intro />
-				<Gallery images={photos} />
+				{/* Ändra rowHeight beroende på skärmbrädd för att skala bilderna rätt */}
+				<Gallery images={photos} rowHeight="180" />
 			</div>
 		);
 	}
