@@ -1,17 +1,4 @@
 .projects {
-	background: red;
 	width: 100%;
 	height: auto;
-}
-
-.projects > .projects-first-section {
-	background: blue;
-	height: 100vh;
-}
-.react-photo-gallery--gallery {
-	width: 100%;
-	height: 40vh;
-}
-.ReactGridGallery {
-	background: blue;
 }

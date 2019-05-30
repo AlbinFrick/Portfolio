@@ -1,0 +1,6 @@
+@media (max-width: 1000px) {
+	.projects-nav > h1 {
+		font-family: Montserrat;
+		padding: 2vw 0 0 5vw;
+	}
+}
