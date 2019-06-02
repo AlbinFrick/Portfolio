@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/AlbinFrick/Portfolio.git/static/css/main.31fc5f0d.chunk.css",
-    "main.js": "/AlbinFrick/Portfolio.git/static/js/main.8b88945e.chunk.js",
-    "main.js.map": "/AlbinFrick/Portfolio.git/static/js/main.8b88945e.chunk.js.map",
-    "runtime~main.js": "/AlbinFrick/Portfolio.git/static/js/runtime~main.9d1d73c4.js",
-    "runtime~main.js.map": "/AlbinFrick/Portfolio.git/static/js/runtime~main.9d1d73c4.js.map",
-    "static/js/2.8d01ba49.chunk.js": "/AlbinFrick/Portfolio.git/static/js/2.8d01ba49.chunk.js",
-    "static/js/2.8d01ba49.chunk.js.map": "/AlbinFrick/Portfolio.git/static/js/2.8d01ba49.chunk.js.map",
-    "index.html": "/AlbinFrick/Portfolio.git/index.html",
-    "precache-manifest.3221ed0368a78d594fb473fde1fe088c.js": "/AlbinFrick/Portfolio.git/precache-manifest.3221ed0368a78d594fb473fde1fe088c.js",
-    "service-worker.js": "/AlbinFrick/Portfolio.git/service-worker.js",
-    "static/css/main.31fc5f0d.chunk.css.map": "/AlbinFrick/Portfolio.git/static/css/main.31fc5f0d.chunk.css.map",
-    "static/media/proffe.jpeg": "/AlbinFrick/Portfolio.git/static/media/proffe.bc1c18a0.jpeg"
+    "main.css": "/portfolio/static/css/main.31fc5f0d.chunk.css",
+    "main.js": "/portfolio/static/js/main.8b88945e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.8b88945e.chunk.js.map",
+    "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
+    "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
+    "static/js/2.8d01ba49.chunk.js": "/portfolio/static/js/2.8d01ba49.chunk.js",
+    "static/js/2.8d01ba49.chunk.js.map": "/portfolio/static/js/2.8d01ba49.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.2dc4fdc2b71eb7df6616e9f69d6c04ef.js": "/portfolio/precache-manifest.2dc4fdc2b71eb7df6616e9f69d6c04ef.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.31fc5f0d.chunk.css.map": "/portfolio/static/css/main.31fc5f0d.chunk.css.map",
+    "static/media/proffe.jpeg": "/portfolio/static/media/proffe.bc1c18a0.jpeg"
   }
 }
