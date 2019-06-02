@@ -43,12 +43,19 @@ const photos = [
 ];
 
 export class Section1 extends Component {
+	setRowHeight = () => {
+		if (window.innerWidth < 1000) {
+			return 110;
+		} else {
+			return 250;
+		}
+	};
 	render() {
 		return (
 			<div className="projects-first-section">
 				<Intro />
 				{/* Ändra rowHeight beroende på skärmbrädd för att skala bilderna rätt */}
-				<Gallery images={photos} rowHeight="180" />
+				<Gallery images={photos} rowHeight={this.setRowHeight()} />
 			</div>
 		);
 	}

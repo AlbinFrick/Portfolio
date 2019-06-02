@@ -1,0 +1,22 @@
+.toggleButton {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	box-sizing: border-box;
+	height: 5vh;
+	width: 6vh;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	margin-right: 2vh;
+}
+
+.toggleButton:focus {
+	outline: none;
+}
+
+.menuButtonLine {
+	width: 6vh;
+	height: 2px;
+	background: black;
+}
