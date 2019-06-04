@@ -1,5 +1,6 @@
-.projects-intro-text {
-	width: 80vw;
-	margin: auto;
-	padding-top: 6vh;
+@media (max-width: 1000px) {
+	.projects-intro-text {
+		width: 80vw !important;
+		margin: 0;
+	}
 }

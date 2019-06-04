@@ -8,7 +8,7 @@
 	background: transparent;
 	border: none;
 	cursor: pointer;
-	margin-right: 2vh;
+	margin: 1vh 3vh 0 0;
 }
 
 .toggleButton:focus {

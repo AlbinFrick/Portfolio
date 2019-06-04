@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Intro from '../ProjectTexts/Intro';
 import Gallery from 'react-grid-gallery';
 import './Section1.css';
+import './Section1-min.css';
 
 const photos = [
 	{
@@ -41,20 +42,35 @@ const photos = [
 		thumbnailHeight: 768
 	}
 ];
-
 export class Section1 extends Component {
+	updateDimensions = () => {
+		this.setState({ width: window.innerWidth, height: window.innerHeight });
+	};
+
+	componentWillMount() {
+		this.updateDimensions();
+	}
+
+	componentDidMount() {
+		window.addEventListener('resize', this.updateDimensions);
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener('resize', this.updateDimensions);
+	}
+
 	setRowHeight = () => {
-		if (window.innerWidth < 1000) {
+		if (this.state.width < 1000) {
 			return 110;
 		} else {
 			return 250;
 		}
 	};
+
 	render() {
 		return (
 			<div className="projects-first-section">
-				<Intro />
-				{/* Ändra rowHeight beroende på skärmbrädd för att skala bilderna rätt */}
+				<Intro windowWidth={this.state.width} />
 				<Gallery images={photos} rowHeight={this.setRowHeight()} />
 			</div>
 		);

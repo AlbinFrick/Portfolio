@@ -11,6 +11,11 @@ export default function sketch(p) {
 	let inc = 0.02;
 	let yspeed = 0.001;
 
+	p.windowResized = function() {
+		p.resizeCanvas(p.windowWidth, p.windowHeight);
+		y = p.windowHeight - p.windowHeight / 4;
+	};
+
 	p.setup = function() {
 		p.createCanvas(p.windowWidth, p.windowHeight + 1000);
 		points.push({ x: -100, y: y });
@@ -25,7 +30,6 @@ export default function sketch(p) {
 		p.clear();
 		p.noStroke();
 		p.fill(p.color(238, 249, 255));
-		p.fill(0);
 		p.beginShape();
 		for (let i = 0; i < pointSize + 3; i++) {
 			yoff += inc;

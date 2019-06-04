@@ -1,8 +1,10 @@
 .projects-first-section {
 	height: 80vh;
+	display: flex;
 }
 
 .projects-first-section > .ReactGridGallery {
 	margin: 5vh auto;
-	width: 80%;
+	width: 45%;
+	height: 30vh;
 }

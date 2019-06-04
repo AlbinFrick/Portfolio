@@ -13,6 +13,12 @@ export default function sketch(p) {
 	let inc = 0.02;
 	let yspeed = 0.001;
 
+	p.windowResized = function() {
+		p.resizeCanvas(p.windowWidth, p.windowHeight);
+		x = p.windowWidth / 3;
+		y = p.windowHeight / 2;
+	};
+
 	p.setup = function() {
 		p.createCanvas(p.windowWidth, p.windowHeight);
 		//for mobile
