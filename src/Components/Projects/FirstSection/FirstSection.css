@@ -1,0 +1,20 @@
+.projects-first-section {
+	height: 80vh;
+	display: flex;
+}
+
+.projects-first-section > .ReactGridGallery {
+	margin: 5vh auto;
+	width: 45%;
+	height: 30vh;
+}
+
+.projects-first-section > .projects-intro-text {
+	width: 40vw;
+	margin: auto;
+	padding-top: 6vh;
+}
+
+.projects-first-section > .projects-intro-text > p {
+	margin-bottom: 2vh;
+}
