@@ -1,11 +1,13 @@
 @media screen and (max-width: 1000px) {
-	.projects-fist-section {
+	.projects-first-section {
 		height: 80vh;
+		display: flex;
 		flex-wrap: wrap;
 	}
 
-	.projects-fist-section > .ReactGridGallery {
-		width: 80%;
+	.projects-first-section > .ReactGridGallery {
 		margin: 5vh auto;
+		width: 80%;
+		height: 30vh;
 	}
 }

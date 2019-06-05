@@ -10,8 +10,12 @@ function renderNavigation() {
 	} else {
 		return (
 			<>
-				<NavLink className="project-link">Arboreal</NavLink>
-				<NavLink className="project-link">Typer</NavLink>
+				<NavLink to="/typer" className="project-link">
+					Typer
+				</NavLink>
+				<NavLink to="/" className="project-link">
+					Arboreal
+				</NavLink>
 				<Hbutton />
 			</>
 		);

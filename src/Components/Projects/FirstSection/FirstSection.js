@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Gallery from 'react-grid-gallery';
+import Intro from './Intro/Intro';
 import './FirstSection.css';
 import './FirstSection-min.css';
 
@@ -69,44 +70,10 @@ export class FirstSection extends Component {
 		}
 	};
 
-	renderIntro = () => {
-		console.log(this.state.width);
-		if (this.state.width < 1000) {
-			return (
-				<>
-					<p>
-						This project was about creating a prototyp for Arboreal.
-						Arboreal is a startup company that with the help of
-						AR-technology let's users measure trees.
-					</p>
-					<p>
-						The product will be availible to both companies and for
-						the usual layman. We were five people working on this
-						project and the goal was to creat an interactive
-						prototype that Arboreal could use as a guide for the
-						building of the real application.
-					</p>
-				</>
-			);
-		} else {
-			return (
-				<p>
-					This project was about creating a prototyp for Arboreal.
-					Arboreal is a startup company that with the help of
-					AR-technology let's users measure trees. The product will be
-					availible to both companies and for the usual layman. We
-					were five people working on this project and the goal was to
-					creat an interactive prototype that Arboreal could use as a
-					guide for the building of the real application.
-				</p>
-			);
-		}
-	};
-
 	render() {
 		return (
 			<div className="projects-first-section">
-				<div className="projects-intro-text">{this.renderIntro()}</div>
+				<Intro width={this.state.width} />
 				{/* Ändra rowHeight beroende på skärmbrädd för att skala bilderna rätt */}
 				<Gallery images={photos} rowHeight={this.setRowHeight()} />
 			</div>
