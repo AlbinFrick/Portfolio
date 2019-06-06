@@ -29,7 +29,7 @@ export class Projcets extends Component {
 		return (
 			<div className="projects">
 				<Navbar width={this.state.width} />
-				<Drawer />
+				{/* 				<Drawer /> */}
 				<FirstSection />
 				<P5Wrapper sketch={Wave} />
 			</div>

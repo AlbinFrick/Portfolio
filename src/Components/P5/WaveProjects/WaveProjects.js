@@ -13,12 +13,10 @@ export default function sketch(p) {
 	p.windowResized = function() {
 		p.resizeCanvas(p.windowWidth - 18, p.windowHeight + 1000);
 		y = p.windowHeight - p.windowHeight / 4;
-		console.log(p.windowWidth);
 	};
 
 	p.setup = function() {
 		let canvas = p.createCanvas(p.windowWidth - 17, p.windowHeight + 1000);
-		console.log(p.windowWidth);
 		canvas.class('projectCanvas');
 		points.push({ x: -100, y: y });
 		points.push({ x: -100, y: y });
