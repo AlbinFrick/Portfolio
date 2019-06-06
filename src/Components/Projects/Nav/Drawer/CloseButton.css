@@ -1,0 +1,22 @@
+.closeButton {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	box-sizing: border-box;
+	height: 5vh;
+	width: 6vh;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	margin: 1vh 3vh 0 0;
+}
+
+.closeButton:focus {
+	outline: none;
+}
+
+.closeButtonLine {
+	width: 6vh;
+	height: 2px;
+	background: white;
+}

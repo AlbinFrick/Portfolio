@@ -4,7 +4,7 @@
 }
 
 .projects-first-section > .ReactGridGallery {
-	margin: 5vh auto;
-	width: 45%;
-	height: 30vh;
+	margin: 10vh auto 0 auto;
+	width: 40vw;
+	height: auto;
 }

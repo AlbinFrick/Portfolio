@@ -1,9 +1,9 @@
 .projects-intro-text > p {
 	margin-bottom: 2vh;
+	font-size: 1.2em;
 }
 
 .projects-intro-text {
 	width: 40vw;
 	margin: auto;
-	padding-top: 6vh;
 }

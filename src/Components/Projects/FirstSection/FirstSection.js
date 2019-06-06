@@ -44,10 +44,14 @@ const photos = [
 ];
 
 export class FirstSection extends Component {
+	state = {
+		width: 0
+	};
 	updateDimensions = () => {
-		//console.log(window.innerHeight);
-		console.log(window.innerWidth);
-		this.setState({ width: window.innerWidth, height: window.innerHeight });
+		this.setState({
+			width: document.body.clientWidth,
+			height: window.innerHeight
+		});
 	};
 
 	componentWillMount() {

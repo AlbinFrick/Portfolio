@@ -1,5 +1,6 @@
 @media screen and (max-width: 1000px) {
 	.projects-intro-text {
 		width: 80% !important;
+		padding-top: 6vh;
 	}
 }

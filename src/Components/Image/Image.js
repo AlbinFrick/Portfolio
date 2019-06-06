@@ -7,7 +7,7 @@ export class Image extends Component {
 	render() {
 		return (
 			<div className="image">
-				<img src={Proffe} />
+				<img alt="Profile" src={Proffe} />
 			</div>
 		);
 	}

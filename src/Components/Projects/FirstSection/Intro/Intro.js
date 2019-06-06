@@ -4,7 +4,6 @@ import './Intro-min.css';
 
 export class Intro extends Component {
 	renderIntro = () => {
-		console.log(this.props.width);
 		if (this.props.width < 1000) {
 			return (
 				<>

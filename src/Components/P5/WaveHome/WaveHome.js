@@ -14,7 +14,8 @@ export default function sketch(p) {
 	let yspeed = 0.001;
 
 	p.windowResized = function() {
-		p.resizeCanvas(p.windowWidth, p.windowHeight);
+		let canvas = p.resizeCanvas(p.windowWidth, p.windowHeight);
+		canvas.class('homeCanvas');
 		x = p.windowWidth / 3;
 		y = p.windowHeight / 2;
 	};

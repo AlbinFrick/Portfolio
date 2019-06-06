@@ -1,0 +1,39 @@
+.drawer {
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 80%;
+	z-index: 100;
+}
+
+.drawer ul {
+	width: 100%;
+	height: 50%;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.drawer li {
+	margin: 1rem auto;
+	width: 30%;
+	padding: 0.5vh;
+	border-bottom: 1px solid white;
+	text-align: center;
+}
+
+.drawer a {
+	color: white;
+	text-decoration: none;
+	font-size: 2em;
+	font-family: Montserrat;
+}
+
+.drawer a:hover,
+.drawer a:active {
+	color: #ccc;
+	border-bottom: #ccc;
+}

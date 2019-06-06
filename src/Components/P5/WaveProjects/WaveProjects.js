@@ -5,19 +5,21 @@ export default function sketch(p) {
 	let pointSize = 50;
 	let y = p.windowHeight - p.windowHeight / 4;
 	let yWindowOffset = y / 5;
-	console.log(yWindowOffset);
 	let xoff = 0;
 	let yoff = 0;
 	let inc = 0.02;
 	let yspeed = 0.001;
 
 	p.windowResized = function() {
-		p.resizeCanvas(p.windowWidth, p.windowHeight);
+		p.resizeCanvas(p.windowWidth - 18, p.windowHeight + 1000);
 		y = p.windowHeight - p.windowHeight / 4;
+		console.log(p.windowWidth);
 	};
 
 	p.setup = function() {
-		p.createCanvas(p.windowWidth, p.windowHeight + 1000);
+		let canvas = p.createCanvas(p.windowWidth - 17, p.windowHeight + 1000);
+		console.log(p.windowWidth);
+		canvas.class('projectCanvas');
 		points.push({ x: -100, y: y });
 		points.push({ x: -100, y: y });
 		for (let i = 0; i < pointSize; i++) {
