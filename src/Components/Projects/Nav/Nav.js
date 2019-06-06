@@ -6,7 +6,7 @@ import './Nav.css';
 import './Nav-min.css';
 function renderNavigation(props) {
 	if (props.width < 1000) {
-		return <DrawerToggleButton />;
+		return <DrawerToggleButton click={props.drawerClickHandler} />;
 	} else {
 		return (
 			<>

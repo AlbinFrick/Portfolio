@@ -3,8 +3,8 @@
 	flex-direction: column;
 	justify-content: space-around;
 	box-sizing: border-box;
-	height: 5vh;
-	width: 6vh;
+	height: 4vh;
+	width: 5vh;
 	background: transparent;
 	border: none;
 	cursor: pointer;
@@ -16,7 +16,7 @@
 }
 
 .menuButtonLine {
-	width: 6vh;
+	width: 5vh;
 	height: 2px;
 	background: black;
 }

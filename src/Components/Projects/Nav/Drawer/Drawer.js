@@ -5,9 +5,13 @@ import CloseButton from './CloseButton';
 import './Drawer.css';
 
 const Drawer = props => {
+	let drawerClasses = 'drawer';
+	if (props.show) {
+		drawerClasses = 'drawer open';
+	}
 	return (
-		<nav className="drawer">
-			<CloseButton />
+		<nav className={drawerClasses}>
+			<CloseButton close={props.close} />
 			<ul>
 				<li>
 					<NavLink to="/projects/">Arboreal</NavLink>

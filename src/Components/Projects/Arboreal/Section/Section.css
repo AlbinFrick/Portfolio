@@ -1,0 +1,14 @@
+.section-container {
+	width: 100%;
+	background: red;
+	display: flex;
+	justify-content: space-around;
+}
+
+.section-container .section-image {
+}
+.section-container .section-text {
+	width: 45%;
+	background: blue;
+	height: auto;
+}

@@ -14,14 +14,14 @@ export default function sketch(p) {
 	let yspeed = 0.001;
 
 	p.windowResized = function() {
-		let canvas = p.resizeCanvas(p.windowWidth, p.windowHeight);
-		canvas.class('homeCanvas');
+		p.resizeCanvas(p.windowWidth, p.windowHeight);
 		x = p.windowWidth / 3;
 		y = p.windowHeight / 2;
 	};
 
 	p.setup = function() {
-		p.createCanvas(p.windowWidth, p.windowHeight);
+		let canvas = p.createCanvas(p.windowWidth, p.windowHeight);
+		canvas.class('homeCanvas');
 		//for mobile
 		if (p.windowWidth < 1000) {
 			inc = 0.05;
