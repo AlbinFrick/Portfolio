@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faFile } from '@fortawesome/free-regular-svg-icons';
 import './Info.css';
 import './Info-min.css';
@@ -39,24 +39,24 @@ export class Info extends Component {
 				<div className="info">
 					<h1>Albin Frick</h1>
 					<p>
-						{this.renderArrow()} -- This is me(6 years ago ) and I
-						was born and raised in the city of Lycksele in the north
-						of Sweden. I'm a happy and positive guy who likes
-						adventure, specially if there's some adrenaline is
-						involved.
+						{this.renderArrow()} -- This is me(6 years ago, new
+						picture coming soon) and I was born and raised in the
+						city of Lycksele in the north of Sweden. I'm a happy and
+						positive guy who likes adventure, specially if there's
+						some adrenaline is involved.
 					</p>
 					<p>
+						This site is unapologeticly all about me, my projects,
+						interests, things I use every day. Down below are some
+						links if you want read more about me and contact me.
+					</p>
+					{/* 	<p>
 						I love computers in any shape or form. For the last tree
 						years I've been studying for a master of engneering in
 						interaction and design at the Univeristy of Umeå and I
 						only have two years left!
 					</p>
-					<p>
-						This site is unapologeticly all about me, my projects,
-						interests, things I use every day. I would love to talk
-						to you who ever you are! Down below are links where we
-						could have a chat.
-					</p>
+				 */}
 					{/* 	<p>
 						Jag heter Albin Frick och jag är född och uppvuxen i
 						Lycksele. Jag är en glad och positiv kille som gillar
@@ -76,6 +76,9 @@ export class Info extends Component {
 						</a>
 						<a href="mailto:albin_frick@hotmail.com" target="_top">
 							<FontAwesomeIcon icon={faEnvelope} /> Email
+						</a>
+						<a href="https://github.com/AlbinFrick" target="_blank">
+							<FontAwesomeIcon icon={faGithub} /> Github
 						</a>
 						<a href="/">
 							<FontAwesomeIcon icon={faFile} /> Resumé

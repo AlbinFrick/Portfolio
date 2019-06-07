@@ -27,7 +27,18 @@
 		font-size: 1em;
 	}
 	.info-container > .info > .links {
-		display: none;
+		position: absolute;
+		top: 110vh;
+		width: 100%;
+		margin-left: 2vh;
+		justify-content: space-around;
+	}
+	.info .links a {
+		font-size: 1.1em;
+	}
+
+	.info .links a svg {
+		width: 3vh;
 	}
 	.info-container > nav {
 		width: 100%;

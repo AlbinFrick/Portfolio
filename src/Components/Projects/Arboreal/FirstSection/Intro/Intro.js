@@ -4,7 +4,11 @@ import './Intro-min.css';
 
 export class Intro extends Component {
 	renderIntro = () => {
-		if (this.props.width < 1000) {
+		const { width, text } = this.props;
+		if (text) {
+			return <p>{text}</p>;
+		}
+		if (width < 1000) {
 			return (
 				<>
 					<p>

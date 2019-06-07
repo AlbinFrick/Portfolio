@@ -10,4 +10,12 @@
 			rgb(255, 225, 218)
 		);
 	}
+	.projects-gradient {
+		height: 180vh;
+		z-index: -40;
+		background-image: linear-gradient(
+			rgb(241, 193, 171),
+			rgb(255, 225, 218)
+		);
+	}
 }

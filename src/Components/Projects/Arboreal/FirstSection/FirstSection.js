@@ -28,17 +28,22 @@ export class FirstSection extends Component {
 	}
 
 	setRowHeight = () => {
-		if (this.state.width < 1000) {
+		if (this.props.page == 'ABOUT') {
+			return this.state.width < 1000 ? 110 : 350;
+		}
+		return this.state.width < 1000 ? 110 : 250;
+		/* 	if (this.state.width < 1000) {
 			return 110;
 		} else {
 			return 250;
 		}
+ */
 	};
 
 	render() {
 		return (
 			<div className="projects-first-section">
-				<Intro width={this.state.width} />
+				<Intro width={this.state.width} text={this.props.text} />
 				{/* Ändra rowHeight beroende på skärmbrädd för att skala bilderna rätt */}
 				<Gallery
 					images={this.props.photos}

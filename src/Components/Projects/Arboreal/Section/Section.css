@@ -2,10 +2,23 @@
 	width: 100%;
 	margin-top: 5vh;
 	display: flex;
+	flex-direction: row-reverse;
 	justify-content: space-around;
+	align-items: center;
 }
-
+.section-container.reverse {
+	flex-direction: row;
+}
 .section-container .section-text {
 	width: 45%;
 	height: auto;
+}
+
+.section-container .section-image {
+	width: 30%;
+}
+.section-container .section-image > img {
+	width: 100%;
+	box-shadow: 3px 0px 5px black;
+	margin: 0 auto;
 }

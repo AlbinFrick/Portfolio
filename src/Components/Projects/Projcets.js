@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import Navbar from './Nav/Nav';
 import Drawer from './Nav/Drawer/Drawer';
 import FirstSection from './Arboreal/FirstSection/FirstSection';
-import SecondSection from './Arboreal/Section/Section';
+import Section from './Arboreal/Section/Section';
 import P5Wrapper from 'react-p5-wrapper';
 import Wave from '../P5/WaveProjects/WaveProjects';
 import Gradient from '../Gradient/Gradient';
 import './Projects.css';
 const ArborealTexts = [
 	"This project was part of the course Product development in media with the 'Design-Build-Test'-method. As the title suggest, the course is about learning to develop a product with the 'Design-Build-Test'-method. A requirement is that the project should help a company. Therefore we contacted a company, but it wasn't Arboreal in the beginging. We first spoke with the digtal agency Daresay. They then set up the collaberation between us and Arboreal. Then we were of!",
-	'We worked very tight in the group and had a lot of discussions. '
+	'We worked very tight in the group and had alot of discussions. This was very usefull because neither of us new anythnig about measuring forest. To get an idea of what this product would look like each member of the project made a sketch of how to the navigation would work in the application.'
 ];
 const photos = [
 	{
@@ -91,9 +91,14 @@ export class Projcets extends Component {
 					close={this.drawerToggleClickhandler}
 				/>
 				<FirstSection photos={photos} />
-				<SecondSection
+				<Section
 					text={ArborealTexts[0]}
 					imageUrl="https://i.imgur.com/d4UCihx.jpg"
+				/>
+				<Section
+					reverse={true}
+					text={ArborealTexts[1]}
+					imageUrl="https://i.imgur.com/ih6qq9C.jpg?1"
 				/>
 				<Gradient where="PROJECTS" />
 				<P5Wrapper sketch={Wave} />

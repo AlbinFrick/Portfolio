@@ -1,0 +1,28 @@
+.closeButton {
+	box-sizing: border-box;
+	height: 6vh;
+	width: 6vh;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	margin: 1vh 0 0 1vh;
+}
+
+.closeButton:focus {
+	outline: none;
+}
+
+.closeButtonLine {
+	position: absolute;
+	width: 6vh;
+	height: 2px;
+	background: white;
+}
+
+.closeButtonLine:first-child {
+	transform: rotate(45deg);
+}
+
+.closeButtonLine:last-child {
+	transform: rotate(135deg);
+}
