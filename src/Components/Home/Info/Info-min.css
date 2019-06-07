@@ -26,7 +26,9 @@
 		margin: 0 auto 2vh auto;
 		font-size: 1em;
 	}
-
+	.info-container > .info > .links {
+		display: none;
+	}
 	.info-container > nav {
 		width: 100%;
 		margin-top: 2vh;

@@ -11,6 +11,44 @@ const ArborealTexts = [
 	"This project was part of the course Product development in media with the 'Design-Build-Test'-method. As the title suggest, the course is about learning to develop a product with the 'Design-Build-Test'-method. A requirement is that the project should help a company. Therefore we contacted a company, but it wasn't Arboreal in the beginging. We first spoke with the digtal agency Daresay. They then set up the collaberation between us and Arboreal. Then we were of!",
 	'We worked very tight in the group and had a lot of discussions. '
 ];
+const photos = [
+	{
+		src: 'https://i.imgur.com/ju4aHwr.png',
+		thumbnail: 'https://i.imgur.com/ju4aHwr.png',
+		thumbnailWidth: 399,
+		thumbnailHeight: 724
+	},
+	{
+		src: 'https://i.imgur.com/WTlCeUY.jpg',
+		thumbnail: 'https://i.imgur.com/WTlCeUY.jpg',
+		thumbnailWidth: 4032,
+		thumbnailHeight: 3024
+	},
+	{
+		src: 'https://i.imgur.com/GEuV1k7.jpg',
+		thumbnail: 'https://i.imgur.com/GEuV1k7.jpg',
+		thumbnailWidth: 4032,
+		thumbnailHeight: 3024
+	},
+	{
+		src: 'https://i.imgur.com/wHM6xMo.jpg',
+		thumbnail: 'https://i.imgur.com/wHM6xMo.jpg',
+		thumbnailWidth: 2268,
+		thumbnailHeight: 4032
+	},
+	{
+		src: 'https://i.imgur.com/0W8GmHB.jpg',
+		thumbnail: 'https://i.imgur.com/0W8GmHB.jpg',
+		thumbnailWidth: 3024,
+		thumbnailHeight: 4032
+	},
+	{
+		src: 'https://i.imgur.com/tiddBPR.jpg',
+		thumbnail: 'https://i.imgur.com/tiddBPR.jpg',
+		thumbnailWidth: 1024,
+		thumbnailHeight: 768
+	}
+];
 export class Projcets extends Component {
 	state = {
 		drawerOpen: false
@@ -52,7 +90,7 @@ export class Projcets extends Component {
 					show={this.state.drawerOpen}
 					close={this.drawerToggleClickhandler}
 				/>
-				<FirstSection />
+				<FirstSection photos={photos} />
 				<SecondSection
 					text={ArborealTexts[0]}
 					imageUrl="https://i.imgur.com/d4UCihx.jpg"

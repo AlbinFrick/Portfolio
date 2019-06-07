@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faFile } from '@fortawesome/free-regular-svg-icons';
 import './Info.css';
 import './Info-min.css';
 
@@ -63,6 +67,20 @@ export class Info extends Component {
 						Umeå Universitet.
 					</p>
  */}
+					<div className="links">
+						<a
+							href="https://www.linkedin.com/in/albin-frick-2713b9124/"
+							target="_blank"
+						>
+							<FontAwesomeIcon icon={faLinkedin} /> Linkedin
+						</a>
+						<a href="mailto:albin_frick@hotmail.com" target="_top">
+							<FontAwesomeIcon icon={faEnvelope} /> Email
+						</a>
+						<a href="/">
+							<FontAwesomeIcon icon={faFile} /> Resumé
+						</a>
+					</div>
 				</div>
 				<nav>
 					<ul>
