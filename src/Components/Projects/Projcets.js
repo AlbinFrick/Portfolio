@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Navbar from './Nav/Nav';
-import Drawer from './Nav/Drawer/Drawer';
+import Navbar from '../Navbar/Navbar';
+import Drawer from '../Navbar/Drawer/Drawer';
 import FirstSection from './Arboreal/FirstSection/FirstSection';
 import Section from './Arboreal/Section/Section';
 import P5Wrapper from 'react-p5-wrapper';
@@ -85,6 +85,7 @@ export class Projcets extends Component {
 				<Navbar
 					width={this.state.width}
 					drawerClickHandler={this.drawerToggleClickhandler}
+					heading="Consulting for Arboreal"
 				/>
 				<Drawer
 					show={this.state.drawerOpen}

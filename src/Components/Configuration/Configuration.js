@@ -5,7 +5,7 @@ export class Configuration extends Component {
 	render() {
 		return (
 			<div className="config">
-				<Navbar page="CONFIG" />
+				<Navbar heading="My Configurations" />
 			</div>
 		);
 	}

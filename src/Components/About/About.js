@@ -76,7 +76,7 @@ export class About extends Component {
 		return (
 			<div className="about">
 				<Navbar
-					page="ABOUT"
+					heading="About me"
 					width={this.state.width}
 					drawerClickHandler={this.drawerToggleClickhandler}
 				/>

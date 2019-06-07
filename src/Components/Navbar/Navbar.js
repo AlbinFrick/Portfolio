@@ -36,7 +36,7 @@ const Navbar = props => {
 
 	return (
 		<nav className="default-navigation">
-			<h1>{heading}</h1>
+			<h1>{props.heading}</h1>
 			<div className="spacer" />
 			{renderNavigation(props)}
 			<div className="line" />
