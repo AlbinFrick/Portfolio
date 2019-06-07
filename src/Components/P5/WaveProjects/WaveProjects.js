@@ -11,12 +11,12 @@ export default function sketch(p) {
 	let yspeed = 0.001;
 
 	p.windowResized = function() {
-		p.resizeCanvas(p.windowWidth - 18, p.windowHeight + 1000);
+		p.resizeCanvas(p.windowWidth - 18, y + 200);
 		y = p.windowHeight - p.windowHeight / 4;
 	};
 
 	p.setup = function() {
-		let canvas = p.createCanvas(p.windowWidth - 17, p.windowHeight + 1000);
+		let canvas = p.createCanvas(p.windowWidth - 17, y + 200);
 		canvas.class('projectCanvas');
 		points.push({ x: -100, y: y });
 		points.push({ x: -100, y: y });
@@ -29,7 +29,7 @@ export default function sketch(p) {
 	p.draw = function() {
 		p.clear();
 		p.noStroke();
-		p.fill(p.color(238, 249, 255));
+		p.fill(p.color(241, 193, 171));
 		p.beginShape();
 		for (let i = 0; i < pointSize + 3; i++) {
 			yoff += inc;
@@ -42,9 +42,9 @@ export default function sketch(p) {
 				y + yWindowOffset
 			);
 		}
-		p.curveVertex(p.windowWidth, p.windowHeight + 1000);
-		p.curveVertex(-100, p.windowHeight + 1000);
-		p.curveVertex(-100, p.windowHeight + 1000);
+		p.curveVertex(p.windowWidth, y + 200);
+		p.curveVertex(-100, y + 200);
+		p.curveVertex(-100, y + 200);
 
 		p.endShape();
 		xoff += yspeed;

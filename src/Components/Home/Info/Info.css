@@ -3,33 +3,34 @@
 	top: 15vh;
 	right: 5%;
 	width: 50%;
-	height: 60%;
+	height: 80%;
 }
 
 .info-container > .info {
 	width: 80%;
 	height: auto;
-	margin: 0 auto 10% auto;
+	margin: auto;
 }
 
 .info-container > .info > h1 {
 	text-align: center;
 	margin-bottom: 5vh;
-	font-size: 3em;
+	font-size: 5em;
 	letter-spacing: 1vh;
 	font-family: 'Montserrat';
-
-	border-bottom: 1px solid rgb(133, 199, 222);
+	font-weight: 300;
+	border-bottom: 2px solid white; /* rgb(133, 199, 222); */
 }
 .info-container > .info > p {
 	font-family: 'Raleway';
 	font-size: 1.1em;
-	letter-spacing: 1px;
+	margin-bottom: 2vh;
+	letter-spacing: 2px;
 }
 
 .info-container > nav {
-	width: 90%;
-	margin: auto;
+	width: 100%;
+	margin-top: 25vh;
 }
 
 .info-container > nav > ul {
@@ -40,6 +41,7 @@
 
 .info-container > nav > ul > a {
 	width: 25%;
+	font-size: 1.3em;
 	color: black;
 }
 
@@ -54,5 +56,6 @@
 }
 .info-container > nav > ul > a > li:hover {
 	transform: scale(1.1);
-	border-radius: 10px;
+	box-shadow: 5px 0 10px white;
+	border-radius: 20px;
 }

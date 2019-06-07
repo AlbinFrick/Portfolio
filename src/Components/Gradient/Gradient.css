@@ -1,0 +1,28 @@
+.home-gradient {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 57%;
+	height: 100vh;
+	z-index: -40;
+	background-image: linear-gradient(
+		to right,
+		rgb(241, 193, 171),
+		rgb(255, 225, 218) /* rgb(238, 249, 255),
+		rgb(173, 227, 247) */
+	);
+}
+
+.projects-gradient {
+	position: absolute;
+	top: 95vh;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: -40;
+	background-image: linear-gradient(
+		rgb(241, 193, 171),
+		rgb(255, 225, 218) /* rgb(238, 249, 255),
+		rgb(173, 227, 247) */
+	);
+}

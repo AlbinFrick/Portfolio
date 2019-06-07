@@ -1,0 +1,21 @@
+@media screen and (max-width: 1000px) {
+	.section-container {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.section-container .section-text {
+		width: 80%;
+		height: auto;
+	}
+	.section-container .section-image {
+		width: 80%;
+		margin-top: 3vh;
+	}
+	.section-container .section-image > img {
+		width: 100%;
+		margin: 0 auto;
+	}
+}

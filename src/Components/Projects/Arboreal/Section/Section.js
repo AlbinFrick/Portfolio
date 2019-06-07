@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './Section.css';
+import './Section-min.css';
 
 export class Section extends Component {
 	render() {

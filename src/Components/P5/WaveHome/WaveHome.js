@@ -25,6 +25,8 @@ export default function sketch(p) {
 		//for mobile
 		if (p.windowWidth < 1000) {
 			inc = 0.05;
+			pointSize = 30;
+			yWindowOffset = y / 10;
 			points.push({ x: -100, y: y });
 			points.push({ x: -100, y: y });
 			for (let i = 0; i < pointSize; i++) {
@@ -46,7 +48,7 @@ export default function sketch(p) {
 	p.draw = function() {
 		p.clear();
 		p.noStroke();
-		p.fill(p.color(238, 249, 255));
+		p.fill(p.color(241, 193, 171));
 		if (p.windowWidth < 1000) {
 			p.beginShape();
 			for (let i = 0; i < pointSize + 3; i++) {
@@ -60,15 +62,16 @@ export default function sketch(p) {
 					y + yWindowOffset
 				);
 			}
-			p.curveVertex(p.windowWidth, p.windowHeight);
-			p.curveVertex(-100, p.windowHeight);
-			p.curveVertex(-100, p.windowHeight);
+			p.curveVertex(p.windowWidth, y + p.windowHeight / 5);
+			p.curveVertex(-100, y + p.windowHeight / 5);
+			p.curveVertex(-100, y + p.windowHeight / 5);
 
 			p.endShape();
 			xoff += yspeed;
 			yoff = 0;
 		} else {
 			p.beginShape();
+
 			for (let i = 0; i < pointSize + 3; i++) {
 				xoff += inc;
 				p.curveVertex(points[i].x, points[i].y);
@@ -80,9 +83,9 @@ export default function sketch(p) {
 					x + xWindowOffset
 				);
 			}
-			p.curveVertex(p.windowWidth, p.windowHeight);
-			p.curveVertex(p.windowWidth, -100);
-			p.curveVertex(p.windowWidth, -100);
+			p.curveVertex(x + 200, p.windowHeight);
+			p.curveVertex(x + 200, -100);
+			p.curveVertex(x + 200, -100);
 
 			p.endShape();
 			yoff += yspeed;
